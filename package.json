@@ -4,7 +4,8 @@
   "description": "Web component project using LitElement with TypeScript + Vite",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && tsc",
+    "build": "vite build && tsc && copy:dist",
+    "copy:dist": "cp -r ./dist ./demo",
     "lint": "pnpm run lint:lit-analyzer && pnpm run lint:eslint",
     "lint:eslint": "eslint 'src/**/*.ts' --fix",
     "lint:lit-analyzer": "lit-analyzer",

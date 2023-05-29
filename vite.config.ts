@@ -12,10 +12,10 @@ export default defineConfig({
             entry: path.resolve(__dirname, 'src/index.ts'),
             name: 'web-component-starter',
             fileName: (format) => `index.${format}.js`,
-            formats: ['es'],
+            formats: ['es', 'umd'],
         },
         rollupOptions: {
-            external: /^lit/,
+            // external: /^lit/,
         },
     },
     resolve: {
