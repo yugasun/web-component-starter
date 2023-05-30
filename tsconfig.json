@@ -4,10 +4,10 @@
       "node_modules/@types",
       "src/types"
     ],
-    "target": "esnext",
+    "target": "ESNext",
     "useDefineForClassFields": false,
     "experimentalDecorators": true,
-    "module": "esnext",
+    "module": "ESNext",
     "moduleResolution": "node",
     "strict": true,
     "jsx": "preserve",
@@ -15,9 +15,11 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "esModuleInterop": true,
+    "strictPropertyInitialization": false,
     "lib": [
-      "esnext",
-      "dom"
+      "ESNext",
+      "DOM",
+      "DOM.Iterable"
     ],
     "outDir": "./dist",
     "declaration": true,
