@@ -10,7 +10,7 @@ Web Component template for starter using Lit + TypeScript + Vite 🚀
 ## Feature
 
 -   [x] [Lit Element](https://lit.dev/)
--   [ ] 🌟 [Shoelace Web components](https://shoelace.style/)
+-   [x] 🌟 [Shoelace Web components](https://shoelace.style/)
 -   [x] [TypeScript](https://www.typescriptlang.org/)
 -   [x] [Vite](https://vitejs.dev/) Next Generation Frontend Tooling
 -   [ ] 🎨 [UnoCSS](https://github.com/antfu/unocss) - the instant on-demand atomic CSS engine (**Need bugfix for build version**)

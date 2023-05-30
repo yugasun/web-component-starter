@@ -1,7 +1,7 @@
 {
   "name": "web-component-starter",
   "version": "0.1.0",
-  "description": "Web component project using LitElement with TypeScript + Vite",
+  "description": "Web component template using LitElement with TypeScript + Vite",
   "scripts": {
     "dev": "vite",
     "build": "vite build && tsc && pnpm run copy:dist",
@@ -16,6 +16,7 @@
   },
   "keywords": [
     "web-component",
+    "lit",
     "lit-element",
     "typescript",
     "vite",
