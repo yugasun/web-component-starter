@@ -48,6 +48,9 @@
     "src/**/*.tsx",
     "src/**/*.vue"
   ],
+  "exclude": [
+    "demo",
+  ],
   "references": [
     {
       "path": "./tsconfig.node.json"
