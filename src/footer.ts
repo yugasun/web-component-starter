@@ -7,9 +7,13 @@ class WpFooter extends UnoElement {
     static styles = [
         UnoElement.styles,
         css`
-            .footer {
+            .wp-footer {
                 line-height: 60px;
                 font-size: 16px;
+            }
+
+            .p-2 {
+                padding: 0.5rem;
             }
         `,
     ];
@@ -17,7 +21,7 @@ class WpFooter extends UnoElement {
     year = new Date().getFullYear();
     render() {
         return html`
-            <div class="footer text-primary-dark dark:text-ternary-light">
+            <div class="wp-footer" part="footer">
                 @${this.year}
                 <a
                     class="link__item underline"
@@ -39,8 +43,9 @@ class WpFooter extends UnoElement {
                     class="link__item underline"
                     href="https://lit.dev/"
                     target="_blank"
-                    >Lit</a
                 >
+                    Lit
+                </a>
             </div>
         `;
     }

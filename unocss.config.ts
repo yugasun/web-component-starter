@@ -9,7 +9,7 @@ import {
 } from 'unocss';
 
 export default defineConfig({
-    include: [/\.ts$/],
+    include: [/\.(vue|svelte|[jt]sx?|mdx?|html)($|\?)/],
     presets: [
         presetUno(),
         presetAttributify(),

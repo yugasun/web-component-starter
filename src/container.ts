@@ -4,7 +4,23 @@ import { UnoElement } from './UnoElement';
 
 @customElement('wp-container')
 export class WpContainer extends UnoElement {
-    static styles = [UnoElement.styles, css``];
+    static styles = [
+        UnoElement.styles,
+        css`
+            .wp-container {
+                text-align: center;
+                border: 1px solid #42b983;
+                border-radius: 0.25rem;
+                padding: 1.25rem;
+                margin: 0.625rem 0;
+            }
+
+            .text-2xl {
+                font-size: 1.5rem;
+                line-height: 2rem;
+            }
+        `,
+    ];
 
     @property({ type: String })
     name = 'World';
@@ -18,9 +34,7 @@ export class WpContainer extends UnoElement {
 
     render() {
         return html`
-            <div
-                class="text-center border-1 border-solid border-green b-rounded px-10 py-10 my-5"
-            >
+            <div class="wp-container" part="container">
                 <h1 class="text-2xl">Hello, ${this.name}!</h1>
                 <p class="text-primary-dark dark:text-ternary-light">
                     Recommended IDE:

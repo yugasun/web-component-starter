@@ -4,8 +4,9 @@
   "description": "Web component project using LitElement with TypeScript + Vite",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && tsc && copy:dist",
+    "build": "vite build && tsc && pnpm run copy:dist",
     "copy:dist": "cp -r ./dist ./demo",
+    "demo": "http-server demo",
     "lint": "pnpm run lint:lit-analyzer && pnpm run lint:eslint",
     "lint:eslint": "eslint 'src/**/*.ts' --fix",
     "lint:lit-analyzer": "lit-analyzer",
@@ -53,6 +54,7 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^8.7.1",
+    "http-server": "^14.1.1",
     "husky": "^8.0.3",
     "lint-staged": "^12.5.0",
     "lit-analyzer": "^1.2.1",
@@ -67,6 +69,7 @@
     "typescript": "^4.9.5",
     "unocss": "^0.50.8",
     "vite": "^3.2.7",
+    "vite-plugin-css-injected-by-js": "^3.1.1",
     "vite-plugin-html": "^3.2.0",
     "vite-plugin-inspect": "^0.7.28"
   },

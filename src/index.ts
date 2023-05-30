@@ -1,8 +1,6 @@
 import { html, css, LitElement, unsafeCSS } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
-import unocss from 'uno.css';
-
 import '@shoelace-style/shoelace/dist/themes/light.css';
 import '@shoelace-style/shoelace/dist/themes/dark.css';
 import '@shoelace-style/shoelace/dist/components/button/button.js';
@@ -36,25 +34,13 @@ export class StarterElement extends UnoElement {
     @property({ type: Number })
     count = 0;
 
-    headerTemplate(title: string) {
-        return html`<header>${title}</header>`;
-    }
-
     render() {
         return html`
-            <wp-header></wp-header>
-            <wp-container></wp-container>
+            <wp-header>Web Component Starter</wp-header>
+            <wp-container name=${this.name} count=${this.count}></wp-container>
             <slot></slot>
             <wp-footer></wp-footer>
         `;
-    }
-
-    private _onClick() {
-        this.count++;
-    }
-
-    foo(): string {
-        return 'foo';
     }
 }
 
